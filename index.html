@@ -37,20 +37,10 @@
     <model-viewer src="./testcube.glb"
                   ar
                   camera-controls
-        <button id="hotspotButton">Hotspot</button>
                   alt="A 3D model of your structural steel"
                   ios-src="./testcube.usdz">
     </model-viewer>
 
- <script>
-hotspotButton.addEventListener('click', () => {
-  if (modelViewer.paused) {
-    modelViewer.play();
-  } else {
-    modelViewer.pause();
-  }
-});
-</script>   
   
     <section class="attribution">
       <span>
