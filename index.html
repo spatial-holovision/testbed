@@ -34,13 +34,23 @@
   <img src="https://holovision.com.au/wp-content/themes/holovision/images/holovision-logo-with-tagline.svg" alt="Holovision 3D Logo" class="center">
   <div id="card">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="./testcube.glb"
+    <model-viewer id="model-viewer"
+      src="./testcube.glb"
                   ar
                   camera-controls
                    alt="A 3D model of your structural steel"
                   ios-src="./testcube.usdz">
     </model-viewer>
 
+    <script>
+  const modelViewer = document.getElementById("model-viewer");
+
+  modelViewer.addEventListener("load", function () {
+   // modelViewer.animationName = "animation-group";
+   modelViewer.play({repetitions: 1})
+  });
+
+</script>
   
     <section class="attribution">
       <span>
