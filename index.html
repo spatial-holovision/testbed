@@ -43,8 +43,8 @@
     </model-viewer>
 
     <script>
-  const modelViewer = document.getElementById("model-viewer");
-
+//need to make sure that you add the id="model-viewer" up above in the model-viewer block in order to make this work
+      const modelViewer = document.getElementById("model-viewer");
   modelViewer.addEventListener("load", function () {
    // modelViewer.animationName = "animation-group";
    modelViewer.play({repetitions: 1})
